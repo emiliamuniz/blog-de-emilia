@@ -1,0 +1,12 @@
+ 
+    .img-container {
+  display: flex;           /* pone los elementos uno al lado del otro */
+  gap: 10px;               /* espacio entre las imágenes */
+  justify-content: center; /* opcional: centra las imágenes horizontalmente */
+}
+
+.img-container img {
+  width: 50%;              /* cada imagen ocupa la mitad del contenedor */
+  max-width: 100%;         /* para que no se salga en pantallas chicas */
+  height: auto;            /* mantiene la proporción */
+}

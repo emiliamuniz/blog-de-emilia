@@ -1,0 +1,199 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  line-height: 1.6;
+  background-image: url('https://i.pinimg.com/1200x/25/aa/1a/25aa1a16b78d63f639b04b8427d4f2d6.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-position: center;
+}
+
+/* ahora sí, fuera del body */
+.box {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 40px auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: #101018;
+  background-color: rgba(69, 172, 204, 0.267);
+  padding: 10px 16px;
+  border-radius: 40px;
+  transition: background 0.3s;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #101018;
+  padding: 1px 16px;
+  border-radius: 99px;
+  transition: background 0.3s;
+}
+
+h5 {
+    font-size: 1.5rem;
+    color: rgb(0, 0, 17);
+    display: flex;
+    justify-content: flex-start;
+}
+
+h6 {
+    font-size: 1.8rem;
+    color: rgb(0, 0, 17);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.35);
+    display: flex;
+    justify-content: center;
+}
+
+h5, h6 {
+  margin-top: 0.5rem;    /* antes del título */
+  margin-bottom: 0.5rem; /* después del título */
+}
+
+p {
+  margin-top: 0.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.container{ grid-template-columns: 1fr; }
+
+
+
+.post{
+background: var(--card);
+padding: 1.1rem 1.1rem 1rem;
+border-radius: 18px;
+box-shadow: var(--shadow);
+border: 1px solid rgba(255,255,255,.08);
+margin-bottom: 1rem;
+font-size: 1.1rem;
+background-color: rgba(90, 187, 194, 0.267); /* blanco con 80% opacidad */
+  padding: 20px;
+  border-radius: 12px; /* bordes redondeados */
+  max-width: 800px;
+  margin: 40px auto; /* centrado con margen */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* sombrita suave */
+}
+.post h3{
+margin: .2rem 0 .4rem;
+text-shadow: 0 1px 0 rgba(0, 0, 0, 0.35);
+color: rgb(13, 40, 88);
+font-size: 1.3rem;
+
+}
+.post .meta{
+font-size: .92rem;
+color: var(--muted);
+margin-bottom: .6rem;
+
+}
+
+
+
+
+.sidebar .card{
+background: var(--card);
+padding: 1rem;
+border-radius: 18px;
+box-shadow: var(--shadow);
+border: 1px solid rgba(255,255,255,.08);
+margin-bottom: 1rem;
+
+}
+.counter{
+display: inline-flex;
+gap: .25rem;
+padding: .25rem;
+background: rgba(0,0,0,.2);
+border-radius: 8px;
+}
+.counter span{
+display: inline-block;
+min-width: 1.2ch;
+text-align: center;
+padding: .2rem .35rem;
+background: linear-gradient(#000000, #1a1a33);
+border: 1px solid rgba(255,255,255,.15);
+border-radius: 6px;
+box-shadow: inset 0 2px 6px rgba(0,0,0,.45);
+}
+
+
+/*bonotes*/
+.btn{
+display: inline-block;
+text-decoration: none;
+color: #101018;
+background: linear-gradient(180deg, #ffffff, #e9d7ff 60%);
+border: 1px solid rgba(0,0,0,.2);
+padding: .5rem .9rem;
+border-radius: 999px;
+font-weight: 700;
+transition: transform .12s ease, box-shadow .12s ease;
+box-shadow: 0 4px 0 rgba(0,0,0,.35);
+}
+.btn:hover{ transform: translateY(-1px); box-shadow: 0 6px 0 rgba(0,0,0,.35); }
+.btn:active{ transform: translateY(1px); box-shadow: 0 2px 0 rgba(0,0,0,.35); }
+.btn.alt{
+background: linear-gradient(180deg, #d9f3ff, #bfe9ff 60%);
+}
+
+
+/* pie de pagina*/
+.site-footer{
+text-align: center;
+padding: 2rem 1rem 3rem;
+color: var(--muted);
+}
+.site-footer a{ color: var(--ink); }
+
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex; justify-content: center; align-items: center;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.hidden { display: none; }
+
+#guestbook-form input,
+#guestbook-form textarea {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 10px; /* espacio entre campos */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+#guestbook-form button {
+  margin-right: 10px; /* espacio entre botones */
+  padding: 8px 16px;
+  font-size: 1rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+}
+
+#guestbook-messages p {
+  margin: 5px 0; /* menos espacio entre mensajes */
+  padding: 4px 0;
